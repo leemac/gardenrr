@@ -1,0 +1,194 @@
+:root {
+    font-size: 62.5%;
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.4rem;
+        color: rgb(82, 95, 127);
+    }
+}
+
+.g-bed-container {
+    margin-right: 10px;
+
+    .g-bed {
+        border-spacing: .1rem;
+        table-layout: fixed;
+        background: rgb(250, 249, 251) none repeat scroll 0% 0%;
+
+        border: 1px solid rgb(209, 202, 216);
+        padding: 1rem;
+        border-radius: 4px;
+
+        .g-cell {
+            border: 1px solid #CCC;
+            height: 45px;
+            text-align: center;
+            min-width: 45px;
+            width: 45px;
+            position: relative;
+
+            &.drop-target {
+                background-color: #AAA;
+            }
+
+            &.danger-top {
+                border-top: 4px solid red;
+            }
+
+            &.danger-bottom {
+                border-bottom: 4px solid red;
+            }
+
+            &.danger-left {
+                border-left: 4px solid red;
+            }
+
+            &.danger-right {
+                border-right: 4px solid red;
+            }
+
+            &.danger {
+                background-color: lightpink;
+            }
+
+            &.good {
+                background-color: lightgreen;
+            }
+
+
+            .cell-image {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .g-bed-controls {
+        padding: 1rem;
+        text-align: center;
+    }
+}
+
+
+.g-garden {
+    width: 100%;
+}
+
+.g-garden h2 {
+    text-align: center;
+}
+
+.g-garden-beds {
+    display: flex;
+}
+
+.g-designer {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1050px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.g-bed-new:hover {
+    cursor: pointer;
+    background-color: #E0E0E0;
+}
+
+.g-plant-picker {
+    margin-right: 1rem;
+    width: 20rem;
+
+    .g-picker-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .g-picker-list-item {
+        padding: .5rem 1rem;
+        font-weight: 400;
+
+        .g-plant-icon-small {
+            width: 16px;
+        }
+
+        &.selected {
+            background-color: #CCC;
+        }
+
+        &:hover {
+            background-color: #F0F0F0;
+            cursor: pointer;
+        }
+
+        .g-variety {
+            font-size: 1.3rem;
+        }
+
+        .g-name {
+            display: flex;
+            font-size: 1.1rem;
+
+            .image-container {
+                width: 24px;
+            }
+        }
+    }
+}
+
+.g-button {
+    border-radius: 4px;
+    border: none;
+    padding: .8rem 2rem;
+    font-size: 1.1rem;
+
+    &.g-primary {
+        background-color: rgb(68, 117, 254);
+        color: #FFF;
+    }
+
+    &.g-danger {
+        background-color: red;
+        color: #FFF;
+    }
+
+    &.g-danger-outline {
+        background-color: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    &.g-default {
+        background-color: blue;
+        color: blue;
+    }
+
+    &.g-default-outline {
+        background-color: transparent;
+        border: 1px solid blue;
+        color: blue;
+    }
+
+    &.g-block {
+        display: block;
+    }
+}
+
+.g-bed-new {
+    height: 100%;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
